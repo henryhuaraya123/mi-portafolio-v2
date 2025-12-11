@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: ['/admin/', '/api/'], // Protegemos rutas privadas de la indexación
         },
-        sitemap: 'https://tu-dominio-vercel.vercel.app/sitemap.xml', // Ajustar con dominio real
+        sitemap: 'https://mi-portafolio-v2-henna.vercel.app/sitemap.xml', // Ajustar con dominio real
     }
 }

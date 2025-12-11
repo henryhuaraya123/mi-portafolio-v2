@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 // Esta URL base debería venir de variables de entorno en producción
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://tu-dominio-vercel.vercel.app'
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://mi-portafolio-v2-henna.vercel.app'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     return [
