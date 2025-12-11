@@ -17,8 +17,45 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  title: "Portafolio Dinámico",
-  description: "Portafolio profesional con Next.js y Supabase",
+  title: "Henry Denilson | Full Stack Developer & Tech Innovator",
+  description: "Portafolio profesional de Henry Denilson. Desarrollador Full Stack especializado en crear experiencias web excepcionales, aplicaciones modernas y soluciones tecnológicas innovadoras.",
+  keywords: [
+    "Henry Denilson",
+    "Full Stack Developer",
+    "Desarrollador Web",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Supabase",
+    "Portafolio",
+    "Programador Perú"
+  ],
+  authors: [{ name: "Henry Denilson" }],
+  creator: "Henry Denilson",
+  openGraph: {
+    type: "website",
+    locale: "es_ES",
+    url: "https://mi-portafolio.vercel.app", // URL genérica, pero útil
+    title: "Henry Denilson | Full Stack Developer",
+    description: "Transformando ideas en realidad digital. Explora mis proyectos y experiencia técnica.",
+    siteName: "Henry Denilson Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Henry Denilson | Full Stack Developer",
+    description: "Transformando ideas en realidad digital. Explora mis proyectos.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
