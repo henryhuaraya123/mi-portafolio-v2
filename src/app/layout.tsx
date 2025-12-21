@@ -17,10 +17,11 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  title: "Henry Denilson | Full Stack Developer & Tech Innovator",
-  description: "Portafolio profesional de Henry Denilson. Desarrollador Full Stack especializado en crear experiencias web excepcionales, aplicaciones modernas y soluciones tecnológicas innovadoras.",
+  title: "Henry Denilson Huaraya Chipana | Full Stack Developer & Tech Innovator",
+  description: "Portafolio profesional de Henry Denilson Huaraya Chipana. Desarrollador Full Stack especializado en crear experiencias web excepcionales, aplicaciones modernas y soluciones tecnológicas innovadoras.",
   keywords: [
-    "Henry Denilson",
+    "Henry Denilson Huaraya Chipana",
+    "Huaraya Chipana",
     "Full Stack Developer",
     "Desarrollador Web",
     "React",

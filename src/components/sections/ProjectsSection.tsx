@@ -93,22 +93,19 @@ function ProjectCard({ project }: { project: ProjectWithImages }) {
 
             <CardHeader>
                 <CardTitle className="font-heading flex justify-between items-start gap-2">
-                    <span className="truncate" title={project.name}>{project.name}</span>
+                    <span title={project.name}>{project.name}</span>
                 </CardTitle>
-                <CardDescription className="line-clamp-3">
+                <CardDescription className="text-justify">
                     {project.description}
                 </CardDescription>
             </CardHeader>
             <CardContent className="flex-1">
                 <div className="flex flex-wrap gap-2">
-                    {project.tech_stack?.slice(0, 5).map((tech, i) => (
+                    {project.tech_stack?.map((tech, i) => (
                         <Badge key={i} variant="secondary" className="bg-secondary/50">
                             {tech}
                         </Badge>
                     ))}
-                    {(project.tech_stack?.length || 0) > 5 && (
-                        <Badge variant="outline" className="text-xs">+{(project.tech_stack?.length || 0) - 5}</Badge>
-                    )}
                 </div>
             </CardContent>
             <CardFooter className="flex gap-2 pt-0">
