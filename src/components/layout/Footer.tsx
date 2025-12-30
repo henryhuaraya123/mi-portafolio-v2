@@ -29,10 +29,10 @@ export function Footer({ contactLinks = [] }: FooterProps) {
                     {/* Brand */}
                     <div>
                         <h3 className="text-lg font-heading font-bold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent mb-2">
-                            Portafolio
+                            Henry Denilson H.
                         </h3>
                         <p className="text-sm text-muted-foreground">
-                            Desarrollador Full Stack apasionado por crear experiencias web excepcionales.
+                            Henry Denilson Huaraya Chipana | Desarrollador Full Stack apasionado por crear experiencias web excepcionales.
                         </p>
                     </div>
 
@@ -93,7 +93,7 @@ export function Footer({ contactLinks = [] }: FooterProps) {
                 <Separator className="my-8" />
 
                 <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
-                    <p>© {currentYear} Portafolio. Todos los derechos reservados.</p>
+                    <p>© {currentYear} Henry Denilson Huaraya Chipana. Todos los derechos reservados.</p>
                     <p className="mt-2 sm:mt-0">
                         Hecho con agentes LLM + conocimientos personales con las tecnologías Next.js y Supabase
                     </p>

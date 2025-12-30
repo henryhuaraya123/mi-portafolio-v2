@@ -30,7 +30,7 @@ export function AboutSection({
                         <CardContent className="p-8">
                             <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
                                 <Avatar className="w-32 h-32 border-4 border-primary/20">
-                                    <AvatarImage src={avatarUrl} alt="Profile" />
+                                    <AvatarImage src={avatarUrl} alt="Henry Denilson Huaraya Chipana" />
                                     <AvatarFallback className="text-2xl font-heading">
                                         DEV
                                     </AvatarFallback>

@@ -113,7 +113,7 @@ export function HeroSection({
                             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-heading font-bold mb-5 leading-tight drop-shadow-xl">
                                 Hola, soy <br />
                                 <span className="text-foreground relative inline-block">
-                                    Henry Denilson
+                                    Henry Denilson Huaraya
                                 </span>
                                 <br />
                                 <span className="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent filter drop-shadow-md">

@@ -49,9 +49,9 @@ export function Navbar() {
                     {/* Logo */}
                     <Link
                         href="/"
-                        className="text-xl font-heading font-bold"
+                        className="text-xl font-heading font-bold bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent"
                     >
-                        Portafolio
+                        Henry Denilson
                     </Link>
 
                     {/* Desktop Navigation */}
