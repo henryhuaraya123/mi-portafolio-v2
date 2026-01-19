@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Mail, Send, Github, Linkedin, Twitter } from "lucide-react"
+import { Mail, Send, Github, Linkedin, Twitter, MessageCircle } from "lucide-react"
 import { motion } from "framer-motion"
 import { toast } from "sonner"
 import { useForm } from "react-hook-form"
@@ -84,7 +84,7 @@ export function ContactSection({ contactLinks = [] }: ContactSectionProps) {
                     viewport={{ once: true }}
                 >
                     <h2 className="text-3xl sm:text-4xl font-heading font-bold text-center mb-4">
-                        <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">Contacto</span>
+                        <span className="text-blue-700 dark:text-blue-400">Contacto</span>
                     </h2>
                     <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
                         ¿Tienes un proyecto en mente? ¡Hablemos!
@@ -153,7 +153,7 @@ export function ContactSection({ contactLinks = [] }: ContactSectionProps) {
 
                                     <Button
                                         type="submit"
-                                        className="w-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600"
+                                        className="w-full bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700"
                                         disabled={isSubmitting}
                                     >
                                         {isSubmitting ? (
@@ -187,23 +187,7 @@ export function ContactSection({ contactLinks = [] }: ContactSectionProps) {
                                         className="flex items-center gap-3 p-3 rounded-lg bg-green-500/10 hover:bg-green-500/20 border border-green-500/20 transition-all group"
                                     >
                                         <div className="p-2 rounded-full bg-green-500 text-white shadow-md group-hover:scale-110 transition-transform">
-                                            {/* Icono de WhatsApp - SVG Inline para evitar dependencias */}
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                strokeWidth="2"
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                className="h-5 w-5"
-                                            >
-                                                <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
-                                                <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0 1 0v3a.5.5 0 0 1-1 0v-1a.5.5 0 0 1-1 0V10z" />
-                                                <path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z" style={{ display: 'none' }} />
-                                                {/* Usando path de Phone para simular, o MessageCircle. Mejor usar el SVG real simplificado */}
-                                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                                            </svg>
+                                            <MessageCircle className="h-5 w-5" />
                                         </div>
                                         <div>
                                             <p className="font-bold text-green-600 dark:text-green-400">WhatsApp</p>

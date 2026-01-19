@@ -24,42 +24,42 @@ const adminSections = [
         description: "Gestiona tus proyectos y portafolio",
         icon: FolderKanban,
         href: "/admin/projects",
-        color: "from-blue-500 to-cyan-500",
+        color: "bg-blue-600",
     },
     {
         title: "Educación",
         description: "Administra tu formación académica",
         icon: GraduationCap,
         href: "/admin/education",
-        color: "from-green-500 to-emerald-500",
+        color: "bg-blue-700",
     },
     {
         title: "Experiencia",
         description: "Gestiona tu experiencia laboral",
         icon: Briefcase,
         href: "/admin/experience",
-        color: "from-purple-500 to-pink-500",
+        color: "bg-blue-800",
     },
     {
         title: "Enlaces de Contacto",
         description: "Administra tus redes sociales",
         icon: LinkIcon,
         href: "/admin/contact-links",
-        color: "from-orange-500 to-red-500",
+        color: "bg-blue-900",
     },
     {
         title: "Mensajes",
         description: "Ver mensajes de contacto recibidos",
         icon: Mail,
         href: "/admin/messages",
-        color: "from-indigo-500 to-blue-500",
+        color: "bg-indigo-600",
     },
     {
         title: "Configuración Global",
         description: "Ajustes generales del Portafolio",
         icon: Settings,
         href: "/admin/config",
-        color: "from-gray-500 to-slate-500",
+        color: "bg-slate-600",
     },
 ]
 
@@ -75,13 +75,13 @@ export default function AdminDashboard() {
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-background to-muted">
+        <div className="min-h-screen bg-muted/20">
             {/* Header */}
             <header className="border-b border-border bg-background/80 backdrop-blur-lg sticky top-0 z-50">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                            <LayoutDashboard className="h-6 w-6 text-primary" />
+                            <LayoutDashboard className="h-6 w-6 text-blue-700 dark:text-blue-400" />
                             <h1 className="text-2xl font-heading font-bold">Panel de Administración</h1>
                         </div>
                         <div className="flex items-center gap-2">
@@ -116,16 +116,16 @@ export default function AdminDashboard() {
                         const Icon = section.icon
                         return (
                             <Link key={section.href} href={section.href}>
-                                <Card className="h-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
+                                <Card className="h-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer group border-border/40 hover:border-blue-500/50">
                                     <CardHeader>
-                                        <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${section.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                                        <div className={`w-12 h-12 rounded-lg ${section.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg shadow-blue-500/10`}>
                                             <Icon className="h-6 w-6 text-white" />
                                         </div>
                                         <CardTitle className="font-heading">{section.title}</CardTitle>
                                         <CardDescription>{section.description}</CardDescription>
                                     </CardHeader>
                                     <CardContent>
-                                        <Button variant="ghost" className="w-full">
+                                        <Button variant="ghost" className="w-full group-hover:bg-blue-500/10 group-hover:text-blue-700 dark:group-hover:text-blue-400">
                                             Administrar →
                                         </Button>
                                     </CardContent>

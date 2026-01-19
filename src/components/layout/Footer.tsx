@@ -28,7 +28,7 @@ export function Footer({ contactLinks = [] }: FooterProps) {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* Brand */}
                     <div>
-                        <h3 className="text-lg font-heading font-bold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent mb-2">
+                        <h3 className="text-lg font-heading font-bold text-blue-700 dark:text-blue-400 mb-2">
                             Henry Denilson H.
                         </h3>
                         <p className="text-sm text-muted-foreground">

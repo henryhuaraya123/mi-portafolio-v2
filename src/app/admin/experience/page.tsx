@@ -173,7 +173,7 @@ export default function ExperienceAdminPage() {
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-background to-muted">
+        <div className="min-h-screen bg-muted/20">
             <header className="border-b border-border bg-background/80 backdrop-blur-lg sticky top-0 z-50">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
                     <div className="flex items-center justify-between">
@@ -183,11 +183,11 @@ export default function ExperienceAdminPage() {
                                     <ArrowLeft className="h-5 w-5" />
                                 </Link>
                             </Button>
-                            <h1 className="text-2xl font-heading font-bold">Gestión de Experiencia</h1>
+                            <h1 className="text-2xl font-heading font-bold text-blue-700 dark:text-blue-400">Gestión de Experiencia</h1>
                         </div>
                         <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
                             <DialogTrigger asChild>
-                                <Button onClick={openNewDialog} className="bg-gradient-to-r from-green-400 to-blue-500">
+                                <Button onClick={openNewDialog} className="bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700">
                                     <Plus className="mr-2 h-4 w-4" />
                                     Nueva Experiencia
                                 </Button>

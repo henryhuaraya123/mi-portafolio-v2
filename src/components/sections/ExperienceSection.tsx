@@ -28,7 +28,7 @@ export function ExperienceSection({ experience = [] }: ExperienceSectionProps) {
                     viewport={{ once: true }}
                 >
                     <h2 className="text-3xl sm:text-4xl font-heading font-bold text-center mb-4">
-                        <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">Experiencia</span>
+                        <span className="text-blue-700 dark:text-blue-400">Experiencia</span>
                     </h2>
                     <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
                         Mi trayectoria profesional
@@ -50,7 +50,7 @@ export function ExperienceSection({ experience = [] }: ExperienceSectionProps) {
                                 >
                                     <Card className="relative overflow-hidden">
                                         {/* Timeline dot */}
-                                        <div className="absolute left-0 top-8 w-1 h-full bg-gradient-to-b from-green-400 to-blue-500" />
+                                        <div className="absolute left-0 top-8 w-1 h-full bg-blue-700 dark:bg-blue-400" />
 
                                         <CardHeader className="pl-8">
                                             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">

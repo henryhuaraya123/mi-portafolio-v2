@@ -102,7 +102,7 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${orbitron.variable} font-sans antialiased`}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <div className="min-h-screen">
             {children}
           </div>
