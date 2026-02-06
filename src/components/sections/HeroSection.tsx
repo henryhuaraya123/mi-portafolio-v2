@@ -109,7 +109,7 @@ export function HeroSection({
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.4 }}
-                                className="flex flex-col sm:flex-row gap-6 pt-4"
+                                className="flex flex-col sm:flex-row flex-wrap gap-4 pt-4"
                             >
                                 <Button
                                     size="lg"
@@ -118,10 +118,23 @@ export function HeroSection({
                                             .querySelector("#projects")
                                             ?.scrollIntoView({ behavior: "smooth" })
                                     }
-                                    className="bg-blue-600 text-white hover:bg-blue-700 font-bold px-10 h-14 text-base rounded-full shadow-[0_10px_20px_rgba(37,99,235,0.3)] hover:shadow-[0_15px_30px_rgba(37,99,235,0.4)] transition-all hover:scale-105 active:scale-95"
+                                    className="bg-blue-600 text-white hover:bg-blue-700 font-bold px-6 sm:px-8 h-12 sm:h-14 text-sm sm:text-base rounded-full shadow-[0_10px_20px_rgba(37,99,235,0.3)] hover:shadow-[0_15px_30px_rgba(37,99,235,0.4)] transition-all hover:scale-105 active:scale-95 w-full sm:w-auto"
                                 >
-                                    Ver Mi Trabajo
-                                    <ArrowRight className="ml-2 h-5 w-5" />
+                                    <span className="hidden sm:inline">Ver Proyectos como programador</span>
+                                    <span className="sm:hidden">Proyectos Programador</span>
+                                    <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                                </Button>
+
+                                <Button
+                                    size="lg"
+                                    className="bg-blue-600 text-white hover:bg-blue-700 font-bold px-6 sm:px-8 h-12 sm:h-14 text-sm sm:text-base rounded-full shadow-[0_10px_20px_rgba(37,99,235,0.3)] hover:shadow-[0_15px_30px_rgba(37,99,235,0.4)] transition-all hover:scale-105 active:scale-95 w-full sm:w-auto"
+                                    asChild
+                                >
+                                    <a href="https://henryhuaraya123.github.io/data/" target="_blank" rel="noopener noreferrer">
+                                        <span className="hidden sm:inline">Ver Proyectos como analista</span>
+                                        <span className="sm:hidden">Proyectos Analista</span>
+                                        <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                                    </a>
                                 </Button>
 
                                 {/* Botón CV - Renderizado condicional */}
@@ -129,11 +142,11 @@ export function HeroSection({
                                     <Button
                                         size="lg"
                                         variant="outline"
-                                        className="border-2 border-white/20 bg-white/5 backdrop-blur-md text-white hover:bg-white/10 font-bold px-10 h-14 text-base rounded-full transition-all hover:scale-105 active:scale-95"
+                                        className="border-2 border-white/20 bg-white/5 backdrop-blur-md text-white hover:bg-white/10 font-bold px-6 sm:px-8 h-12 sm:h-14 text-sm sm:text-base rounded-full transition-all hover:scale-105 active:scale-95 w-full sm:w-auto"
                                         asChild
                                     >
                                         <a href={cvUrl} target="_blank" rel="noopener noreferrer">
-                                            <Download className="mr-2 h-5 w-5" />
+                                            <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                                             Descargar CV
                                         </a>
                                     </Button>
