@@ -87,23 +87,34 @@ export function HeroSection({
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <div className="space-y-6">
-                            <h1 className="text-5xl sm:text-5xl lg:text-5xl font-heading font-black mb-5 leading-[0.9] tracking-tighter">
-                                <span className="block text-white/90 drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]">
-                                    Hola, soy
-                                </span>
-                                <span className="block text-white drop-shadow-[0_10px_20px_rgba(0,0,0,0.6)] mt-2">
-                                    Henry Denilson
-                                </span>
-                                <span className="block text-blue-500 mt-4 drop-shadow-[0_0_20px_rgba(59,130,246,0.3)]">
-                                    {typedRole}
-                                    <span className="animate-pulse text-white ml-2">_</span>
-                                </span>
-                            </h1>
-
-                            <p className="text-lg sm:text-xl md:text-2xl text-white/70 max-w-xl leading-relaxed font-light drop-shadow-md">
-                                {headline}
-                            </p>
+                   
+                            <div className="relative z-10 space-y-6">
+                                {/* Contenedor principal con un ligero retoque de tracking para elegancia */}
+                                <h1 className="flex flex-col font-sans tracking-tight">
+                                    <span className="text-sm sm:text-base uppercase tracking-[0.3em] text-blue-400 font-semibold mb-2">
+                                        Presenting
+                                    </span>
+                                    
+                                    {/* Nombre: Uso de una fuente más delgada para el apellido genera un look editorial */}
+                                    <span className="text-4xl sm:text-6xl lg:text-7xl font-light text-white leading-none">
+                                        Henry Denilson <span className="font-black">Huaraya Chipana</span>
+                                    </span>
+                            
+                                    {/* Rol: Color Cian/Azul suave para que destaque sobre el video sin molestar */}
+                                    <span className="mt-6 text-2xl sm:text-3xl lg:text-4xl font-mono text-cyan-400 flex items-center">
+                                        {typedRole}
+                                        <span className="w-[3px] h-[1em] bg-white ml-2 animate-blink"></span>
+                                    </span>
+                                </h1>
+                            
+                                {/* Línea divisoria minimalista (estilo tarjeta de presentación) */}
+                                <div className="w-20 h-[1px] bg-gradient-to-r from-blue-500 to-transparent"></div>
+                            
+                                {/* Headline: Más legible y refinado */}
+                                <p className="text-base sm:text-lg md:text-xl text-zinc-300 max-w-2xl leading-relaxed font-normal antialiased">
+                                    {headline}
+                                </p>
+                            
 
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
