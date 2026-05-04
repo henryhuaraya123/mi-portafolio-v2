@@ -91,10 +91,7 @@ export function HeroSection({
                             <div className="relative z-10 space-y-6">
                                 {/* Contenedor principal con un ligero retoque de tracking para elegancia */}
                                 <h1 className="flex flex-col font-sans tracking-tight">
-                                    <span className="text-sm sm:text-base uppercase tracking-[0.3em] text-blue-400 font-semibold mb-2">
-                                        Presenting
-                                    </span>
-                                    
+                                   </br>
                                     {/* Nombre: Uso de una fuente más delgada para el apellido genera un look editorial */}
                                     <span className="text-4xl sm:text-6xl lg:text-7xl font-light text-white leading-none">
                                         Henry Denilson <span className="font-black">Huaraya Chipana</span>
