@@ -111,7 +111,7 @@ export function HeroSection({
                                 transition={{ duration: 0.5, delay: 0.4 }}
                                 className="flex flex-col sm:flex-row flex-wrap gap-4 pt-4"
                             >
-                                {/* Botón Proyectos Programador - Azul */}
+                                {/* Botón Proyectos Programador - Negro */}
                                 <Button
                                     size="lg"
                                     onClick={() =>
@@ -119,17 +119,17 @@ export function HeroSection({
                                             .querySelector("#projects")
                                             ?.scrollIntoView({ behavior: "smooth" })
                                     }
-                                    className="bg-blue-600 text-white hover:bg-blue-700 font-bold px-6 sm:px-8 h-12 sm:h-14 text-sm sm:text-base rounded-lg shadow-[0_10px_20px_rgba(37,99,235,0.3)] hover:shadow-[0_15px_30px_rgba(37,99,235,0.4)] transition-all hover:scale-105 active:scale-95 w-full sm:w-auto"
+                                    className="bg-black text-white hover:bg-zinc-800 font-bold px-6 sm:px-8 h-12 sm:h-14 text-sm sm:text-base rounded-lg shadow-[0_10px_20px_rgba(0,0,0,0.2)] hover:shadow-[0_15px_30px_rgba(0,0,0,0.3)] transition-all hover:scale-105 active:scale-95 w-full sm:w-auto border border-zinc-800"
                                 >
                                     <span className="hidden sm:inline">Ver Proyectos como programador</span>
                                     <span className="sm:hidden">Proyectos Programador</span>
                                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                                 </Button>
 
-                                {/* Botón Proyectos Analista - Morado */}
+                                {/* Botón Proyectos Analista - Blanco/Gris Elegante */}
                                 <Button
                                     size="lg"
-                                    className="bg-purple-600 text-white hover:bg-purple-700 font-bold px-6 sm:px-8 h-12 sm:h-14 text-sm sm:text-base rounded-lg shadow-[0_10px_20px_rgba(147,51,234,0.3)] hover:shadow-[0_15px_30px_rgba(147,51,234,0.4)] transition-all hover:scale-105 active:scale-95 w-full sm:w-auto"
+                                    className="bg-white text-black hover:bg-zinc-100 font-bold px-6 sm:px-8 h-12 sm:h-14 text-sm sm:text-base rounded-lg border-2 border-black shadow-[0_10px_20px_rgba(0,0,0,0.1)] hover:shadow-[0_15px_30px_rgba(0,0,0,0.15)] transition-all hover:scale-105 active:scale-95 w-full sm:w-auto"
                                     asChild
                                 >
                                     <a href="https://henryhuaraya123.github.io/data/" target="_blank" rel="noopener noreferrer">
